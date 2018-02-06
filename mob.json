@@ -1,0 +1,222 @@
+[
+	{
+		"nom" : "Bandit",
+		"pv" : 15,
+		"mana" : 0,
+		"speed" : 6,
+		"force" : 10,
+		"resistance" : 10,
+		"xp" : 10,
+		"race" : "Humain"
+	},
+	{
+		"nom" : "Grand bandit",
+		"pv" : 20,
+		"mana" : 0,
+		"speed" : 8,
+		"force" : 15,
+		"resistance" : 15,
+		"xp" : 15,
+		"race" : "Humain"
+	},
+	{
+		"nom" : "Chef des bandits",
+		"pv" : 30,
+		"mana" : 0,
+		"speed" : 10,
+		"force" : 20,
+		"resistance" : 20,
+		"xp" : 20,
+		"race" : "Humain"
+	},
+	{
+		"nom" : "Sorcier",
+		"pv" : 30,
+		"mana" : 100,
+		"speed" : 12,
+		"force" : 25,
+		"resistance" : 25,
+		"xp" : 25,
+		"race" : "Humain"
+	},
+	{
+		"nom" : "Vampire",
+		"pv" : 35,
+		"mana" : 0,
+		"speed" : 20,
+		"force" : 20,
+		"resistance" : 10,
+		"xp" : 30,
+		"race" : "Creature nocturne"
+	},
+	{
+		"nom" : "Loup-Garou",
+		"pv" : 40,
+		"mana" : 0,
+		"speed" : 10,
+		"force" : 30,
+		"resistance" : 20,
+		"xp" : 30,
+		"race" : "Creature nocturne"
+	},
+	{
+		"nom" : "Zombi",
+		"pv" : 5,
+		"mana" : 0,
+		"speed" : 3,
+		"force" : 5,
+		"resistance" : 5,
+		"xp" : 5,
+		"race" : "Creature nocturne"
+	},
+	{
+		"nom" : "Rat",
+		"pv" : 3,
+		"mana" : 0,
+		"speed" : 5,
+		"force" : 3,
+		"resistance" : 3,
+		"xp" : 2,
+		"race" : "Bete"
+	},
+	{
+		"nom" : "Rat geant",
+		"pv" : 30,
+		"mana" : 0,
+		"speed" : 10,
+		"force" : 20,
+		"resistance" : 10,
+		"xp" : 20,
+		"race" : "Bete"
+	},
+	{
+		"nom" : "Araignee geante",
+		"pv" : 15,
+		"mana" : 0,
+		"speed" : 10,
+		"force" : 10,
+		"resistance" : 10,
+		"xp" : 10,
+		"race" : "Bete"
+	},
+	{
+		"nom" : "Necroment",
+		"pv" : 30,
+		"mana" : 100,
+		"speed" : 10,
+		"force" : 20,
+		"resistance" : 20,
+		"xp" : 20,
+		"race" : "Humain"
+	},
+	{
+		"nom" : "Chevalier sombre",
+		"pv" : 50,
+		"mana" : 0,
+		"speed" : 15,
+		"force" : 20,
+		"resistance" : 20,
+		"xp" : 20,
+		"race" : "Humain"
+	},
+	{
+		"nom" : "Loup enrage",
+		"pv" : 20,
+		"mana" : 0,
+		"speed" : 20,
+		"force" : 10,
+		"resistance" : 10,
+		"xp" : 20,
+		"race" : "Bete"
+	},
+	{
+		"nom" : "Demon",
+		"pv" : 30,
+		"mana" : 0,
+		"speed" : 10,
+		"force" : 20,
+		"resistance" : 20,
+		"xp" : 20,
+		"race" : "Creature nocturne"
+	},
+	{
+		"nom" : "Seigneur Demon",
+		"pv" : 60,
+		"mana" : 0,
+		"speed" : 25,
+		"force" : 30,
+		"resistance" : 30,
+		"xp" : 200,
+		"race" : "Creature nocturne"
+	},
+	{
+		"nom" : "Orc",
+		"pv" : 30,
+		"mana" : 0,
+		"speed" : 15,
+		"force" : 20,
+		"resistance" : 20,
+		"xp" : 20,
+		"race" : "Peau verte"
+	},
+	{
+		"nom" : "Troll",
+		"pv" : 40,
+		"mana" : 0,
+		"speed" : 10,
+		"force" : 30,
+		"resistance" : 30,
+		"xp" : 20,
+		"race" : "Peau verte"
+	},
+	{
+		"nom" : "Gobelin",
+		"pv" : 20,
+		"mana" : 0,
+		"speed" : 15,
+		"force" : 10,
+		"resistance" : 10,
+		"xp" : 20,
+		"race" : "Peau verte"
+	},
+	{
+		"nom" : "Fantome",
+		"pv" : 30,
+		"mana" : 0,
+		"speed" : 10,
+		"force" : 20,
+		"resistance" : 20,
+		"xp" : 20,
+		"race" : "Creature nocturne"
+	},
+	{
+		"nom" : "Golem",
+		"pv" : 30,
+		"mana" : 0,
+		"speed" : 10,
+		"force" : 20,
+		"resistance" : 20,
+		"xp" : 20,
+		"race" : "Elementaire"
+	},
+	{
+		"nom" : "Dragon",
+		"pv" : 100,
+		"mana" : 0,
+		"speed" : 50,
+		"force" : 50,
+		"resistance" : 50,
+		"xp" : 2000,
+		"race" : "Titan"
+	},
+	{
+		"nom" : "Faucheuse",
+		"pv" : 100,
+		"mana" : 0,
+		"speed" : 50,
+		"force" : 50,
+		"resistance" : 50,
+		"xp" : 2000,
+		"race" : "Titan"
+	}
+]

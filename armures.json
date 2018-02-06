@@ -1,0 +1,86 @@
+[
+	{
+		"nom" : "Cuirasse",
+		"valeur" : 5,
+		"protection" : 5,
+		"ID" : 1,
+		"Lieu" : "torse"
+	},
+	{
+		"nom" : "Plastron",
+		"valeur" : 15,
+		"protection" : 20,
+		"ID" : 2,
+		"Lieu" : "torse"
+	},
+	{
+		"nom" : "Casque",
+		"valeur" : 10,
+		"protection" : 5,
+		"ID" : 1,
+		"Lieu" : "tete"
+	},
+	{
+		"nom" : "Grand Casque",
+		"valeur" : 100,
+		"protection" : 20,
+		"ID" : 2,
+		"Lieu" : "tete"
+	},
+	{
+		"nom" : "Pantalon",
+		"valeur" : 10,
+		"protection" : 5,
+		"ID" : 1,
+		"Lieu" : "jambe"
+	},
+	{
+		"nom" : "Jambiere",
+		"valeur" : 10,
+		"protection" : 5,
+		"ID" : 2,
+		"Lieu" : "jambe"
+	},
+	{
+		"nom" : "Mouffle",
+		"valeur" : 10,
+		"protection" : 5,
+		"ID" : 1,
+		"Lieu" : "main"
+	},
+	{
+		"nom" : "Gantelet",
+		"valeur" : 10,
+		"protection" : 5,
+		"ID" : 2,
+		"Lieu" : "main"
+	},
+	{
+		"nom" : "Epauliere",
+		"valeur" : 10,
+		"protection" : 5,
+		"ID" : 1,
+		"Lieu" : "epaule"
+	},
+	{
+		"nom" : "Spalière",
+		"valeur" : 10,
+		"protection" : 5,
+		"ID" : 2,
+		"Lieu" : "epaule"
+	},
+	{
+		"nom" : "Chaussure",
+		"valeur" : 10,
+		"protection" : 5,
+		"ID" : 1,
+		"Lieu" : "pied"
+	},
+	{
+		"nom" : "Botte",
+		"valeur" : 10,
+		"protection" : 5,
+		"ID" : 2,
+		"Lieu" : "pied"
+	}
+]

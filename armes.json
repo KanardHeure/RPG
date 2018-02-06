@@ -1,0 +1,121 @@
+[	{
+		"nom" : "Epee",
+		"degat" : 10,
+		"valeur" : 2,
+		"ID" : 1
+	},
+	{
+		"nom" : "Sabre",
+		"degat" : 20,
+		"valeur" : 4,
+		"ID" : 2
+	},
+	{
+		"nom" : "Baton",
+		"degat" : 5,
+		"valeur" : 20,
+		"ID" : 3
+	},
+	{
+		"nom" : "Masse",
+		"degat" : 30,
+		"valeur" : 30,
+		"ID" : 4
+	},
+	{
+		"nom" : "Cimeterre",
+		"degat" : 40,
+		"valeur" : 90,
+		"ID" : 5
+	},
+	{
+		"nom" : "Marteau",
+		"degat" : 40,
+		"valeur" : 30,
+		"ID" : 6
+	},
+	{
+		"nom" : "Morgernstern",
+		"degat" : 75,
+		"valeur" : 100,
+		"ID" : 7
+	},
+	{
+		"nom" : "Matraque",
+		"degat" : 5,
+		"valeur" : 3,
+		"ID" : 8
+	},
+	{
+		"nom" : "Rapi?e",
+		"degat" : 30,
+		"valeur" : 30,
+		"ID" : 9
+	},
+	{
+		"nom" : "Hallebarde",
+		"degat" : 60,
+		"valeur" : 80,
+		"ID" : 10
+	},
+	{
+		"nom" : "Pique",
+		"degat" : 30,
+		"valeur" : 25,
+		"ID" : 11
+	},
+	{
+		"nom" : "Couteau",
+		"degat" : 7,
+		"valeur" : 8,
+		"ID" : 12
+	},
+	{
+		"nom" : "Poignard",
+		"degat" : 8,
+		"valeur" : 9,
+		"ID" : 13
+	},
+	{
+		"nom" : "Hache",
+		"degat" : 20,
+		"valeur" : 30,
+		"ID" : 14
+	},
+	{
+		"nom" : "Kama",
+		"degat" : 30,
+		"valeur" : 30,
+		"ID" : 15
+	},
+	{
+		"nom" : "Poing Americain",
+		"degat" : 3,
+		"valeur" : 10,
+		"ID" : 16
+	},
+	{
+		"nom" : "Poing des cieux",
+		"degat" : 30,
+		"valeur" : 30,
+		"ID" : 17
+	},
+	{
+		"nom" : "Faux",
+		"degat" : 75,
+		"valeur" : 100,
+		"ID" : 18
+	},
+	{
+		"nom" : "Espadon",
+		"degat" : 50,
+		"valeur" : 30,
+		"ID" : 19
+	},
+	{
+		"nom" : "Katana",
+		"degat" : 100,
+		"valeur" : 150,
+		"ID" : 20
+	}
+]
