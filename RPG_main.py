@@ -20,14 +20,12 @@ if not path.exists(path.join(curdir,'Save')):
 chemin = []
 chemin.append(path.abspath(path.join(curdir,'armes.json')))
 chemin.append(path.abspath(path.join(curdir,'armures.json')))
-
-
+chemin.append(path.abspath(path.join(curdir,'mob.json')))
+chemin.append(path.abspath(path.join(curdir,'save.ini')))
 
 manager_armes = ManagerArmes()
 manager_armures = ManagerArmures()
-
-
-
+manager_mob = ManagerMob()
 
 
 
@@ -35,19 +33,17 @@ for json_armes in json.load(open(chemin[0])):
 	armes = Arme(**json_armes)
 	manager_armes.load(armes)
 
-for json_armes in json.load(open(chemin[1])):
-	armes = Armure(**json_armes)
-	manager_armures.load(armes)
+for json_armures in json.load(open(chemin[1])):
+	armures = Armure(**json_armures)
+	manager_armures.load(armures)
 
-
-
-chemin_mob = path.abspath(path.join(curdir,'mob.json'))
-manager_mob = ManagerMob(chemin_mob)
-
+for json_mob in json.load(open(chemin[2])):
+	mob = Monstre(**json_mob)
+	manager_mob.load(mob)
 # Initialisation des caractérisques du joueur
 
-chemin = path.abspath(path.join(curdir,'save.ini'))
-player = Gui_initialize_player(chemin)
+
+player = Gui_initialize_player(chemin[3])
 
 
 if player.loadplayer == True:

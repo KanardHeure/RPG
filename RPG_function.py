@@ -67,13 +67,9 @@ class Joueur(Entite):
 
 class Monstre(Entite):
 	"Création d'un monstre"
-	def __init__(self, nom, pv, mana, speed, force, resistance, xp, race):
-		super().__init__(nom, pv, mana)
-		self.speed = speed
-		self.force = force
-		self.resistance = resistance
-		self.xp = xp
-		self.race = race
+	def __init__(self, **attribut):
+		for attr_name, attr_value in attribut.items():
+			setattr(self, attr_name, attr_value)
 
 	def create(self, lvl_j):
 		i = random.randint(1,100)

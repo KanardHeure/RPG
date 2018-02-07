@@ -3,7 +3,7 @@ from os import path
 import json
 import random
 import RPG_function
-
+import copy
 
 class ManagerArmes():
 	def __init__(self):
@@ -28,25 +28,17 @@ class ManagerArmes():
 			print(arme.nom)
 
 class ManagerMob():
-	def __init__(self, chemin):
+	def __init__(self):
 		self.mob = []
-		self.chemin = chemin
-		self.load()
-	def load(self):
-		self.mob.clear()
-		if not path.isfile(self.chemin):
-			print("Impossible de trouver le fichier: mob.json")
-		with open (self.chemin, "r") as fichier:
-			mob_json = json.load(fichier)
-			for item in mob_json:
-				mob = RPG_function.Monstre(item["nom"], item["pv"], item["mana"], item["speed"], item["force"], item["resistance"], item["xp"], item["race"])
-				self.mob.append(mob)
+
+	def load(self, monstre):
+		self.mob.append(monstre)
 
 	def get_random_mob(self):
-		self.load()
 		mob_index = random.randint(0, len(self.mob) - 1)
 		print("Nouveau monstre")
-		return self.mob[mob_index]
+		copy_mob = copy.deepcopy(self.mob[mob_index])
+		return copy_mob
 
 
 class ManagerArmures():
