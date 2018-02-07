@@ -114,19 +114,17 @@ class Stuff():
 		self.valeur = valeur
 		self.id = n_id
 
-class Arme(Stuff):
+class Arme():
 	"Création d'une arme"
-	def __init__(self,nom,valeur, n_id, degat = 0):
-		super().__init__(nom, valeur, n_id)
-		self.degat = degat
+	def __init__(self, **attribut):
+		for attr_name, attr_value in attribut.items():
+			setattr(self, attr_name, attr_value)
 
-class Armure(Stuff):
+class Armure():
 	"Création d'une armure"
-	def __init__(self,nom,valeur, n_id, protection, lieu):
-		super().__init__(nom, valeur, n_id)
-		self.protection = protection
-		self.lieu = lieu
-		self.l = [lieu, str(n_id)]
+	def __init__(self, **attribut):
+		for attr_name, attr_value in attribut.items():
+			setattr(self, attr_name, attr_value)
 
 class Inventaire():
 	"Création d'un inventaire"

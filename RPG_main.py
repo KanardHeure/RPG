@@ -17,11 +17,29 @@ if len(curdir) == 0: curdir = getcwd()
 if not path.exists(path.join(curdir,'Save')):
 	mkdir(path.join(curdir,'Save'))
 
-chemin_armes = path.abspath(path.join(curdir,'armes.json'))
-manager_armes = ManagerArmes(chemin_armes)
+chemin = []
+chemin.append(path.abspath(path.join(curdir,'armes.json')))
+chemin.append(path.abspath(path.join(curdir,'armures.json')))
 
-chemin_armures = path.abspath(path.join(curdir,'armures.json'))
-manager_armures = ManagerArmures(chemin_armures)
+
+
+manager_armes = ManagerArmes()
+manager_armures = ManagerArmures()
+
+
+
+
+
+
+for json_armes in json.load(open(chemin[0])):
+	armes = Arme(**json_armes)
+	manager_armes.load(armes)
+
+for json_armes in json.load(open(chemin[1])):
+	armes = Armure(**json_armes)
+	manager_armures.load(armes)
+
+
 
 chemin_mob = path.abspath(path.join(curdir,'mob.json'))
 manager_mob = ManagerMob(chemin_mob)
