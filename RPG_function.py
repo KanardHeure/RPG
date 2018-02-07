@@ -169,7 +169,5 @@ def lancerSortilege(sort,lanceur,defenseur):
 	print("")
 	print("")
 
-def random_loot(l_list):
-	return random.randint(0,l_list - 1)
 
 
