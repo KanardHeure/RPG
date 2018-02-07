@@ -12,8 +12,8 @@ import time
 # Chargement des armes, armures, monstres à partir des json
 
 curdir = path.dirname(__file__)
-if len(curdir) == 0: curdir = getcwd()
-
+if len(curdir) == 0: 
+	curdir = getcwd()
 if not path.exists(path.join(curdir,'Save')):
 	mkdir(path.join(curdir,'Save'))
 
@@ -27,8 +27,6 @@ manager_armes = ManagerArmes()
 manager_armures = ManagerArmures()
 manager_mob = ManagerMob()
 
-
-
 for json_armes in json.load(open(chemin[0])):
 	armes = Arme(**json_armes)
 	manager_armes.load(armes)
@@ -40,11 +38,10 @@ for json_armures in json.load(open(chemin[1])):
 for json_mob in json.load(open(chemin[2])):
 	mob = Monstre(**json_mob)
 	manager_mob.load(mob)
+
 # Initialisation des caractérisques du joueur
 
-
 player = Gui_initialize_player(chemin[3])
-
 
 if player.loadplayer == True:
 	joueur = player.joueur
@@ -52,6 +49,8 @@ if player.loadplayer == True:
 else:
 	joueur = RPG_function.Joueur(player, manager_armes, manager_armures)
 	inv_joueur = Inventaire()
+
+# Lancement du jeu
 
 jouer = True
 
@@ -92,4 +91,5 @@ while jouer:
 		jouer = False
 	else:
 		print("Mauvaise valeur entrée")
+
 

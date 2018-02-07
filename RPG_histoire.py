@@ -15,7 +15,7 @@ def quete(j, m):
 	print("3. Vous essayez de vous souvenir comment vous en êtes arrivé la ?")
 	choix = input()
 	if choix == "1":
-		random_effect(2)
+		index = random_effect(2)
 		while not game_error:
 			game_error = not game_error
 			if index == 0:
@@ -33,7 +33,7 @@ def quete(j, m):
 				print("Error")
 				game_error = not game_error
 	if choix == "2":
-		random_effect(1)
+		index = random_effect(1)
 		while not game_error:
 			game_error = not game_error
 			if index == 0:
@@ -48,7 +48,7 @@ def quete(j, m):
 				game_error = not game_error
 
 def random_effect(nb):
-	index = random.randint(0, 0)
+	return random.randint(0, nb)
 
 
 		
