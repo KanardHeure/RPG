@@ -8,6 +8,7 @@ from os import getcwd
 from os import mkdir
 from tkinter import *
 import time
+import pygame
 
 # Chargement des armes, armures, monstres à partir des json
 
@@ -81,6 +82,8 @@ while jouer:
 		print ("Vous êtes dans le village")
 	elif choix == "3":
 		print ("Vous vous endormez")
+		print("Vous regagnez tout vos point de vie")
+		joueur.pv = 200
 	elif choix == "4":
 		joueur.voir_stuff()
 	elif choix == "5":
