@@ -41,17 +41,17 @@ class Joueur(Entite):
 	def changement_arme(self, new_arme):
 		self.arme = new_arme
 	def changement_armure(self, new_armure):
-		if new_armure.lieu == "tete":
+		if new_armure.Lieu == "tete":
 			self.tete = new_armure
-		elif new_armure.lieu == "torse":
+		elif new_armure.Lieu == "torse":
 			self.torse = new_armure
-		elif new_armure.lieu == "jambe":
+		elif new_armure.Lieu == "jambe":
 			self.jambiere = new_armure
-		elif new_armure.lieu == "main":
+		elif new_armure.Lieu == "main":
 			self.gant = new_armure
-		elif new_armure.lieu == "epaule":
+		elif new_armure.Lieu == "epaule":
 			self.epaule = new_armure
-		elif new_armure.lieu == "botte":
+		elif new_armure.Lieu == "botte":
 			self.botte = new_armure
 		else:
 			print("ERROR, Ce n'est pas armure")

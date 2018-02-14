@@ -1,0 +1,61 @@
+[	{
+        "question" : "Un bandit vous demande toute vos économies que faite vous ?",
+        "answer1" : "Vous sortez votre épée",
+        "answer2" : "Vous le transformez en grenouille",
+        "answer3" : "Vous courrez le plus vite possible en espérant qu'il vous rattape pas.."      
+	},
+	{
+        "question" : "Une porte est fermé devant vous, que faite vous ?",
+        "answer1" : "Vous la crochetez",
+        "answer2" : "Vous la détruisez à grand coup de hache",
+        "answer3" : "Vous utilisez un sort pour la brûler"
+	},
+    {
+        "question" : "Quelle genre de blague feriez vous à votre amis ?",
+        "answer1" : "Des laxatifs dans son déjeuner",
+        "answer2" : "Lui couper sa ceinture",
+        "answer3" : "Un petit croche pied devant tout le monde"
+    },
+    {
+        "question" : "Vous êtes en ville et vous n'avez pas manger depuis plusieurs jours, que faites vous? ?",
+        "answer1" : "Vous raquêter des bourges faible",
+        "answer2" : "Vous volez des fruits sur le marché",
+        "answer3" : "Vous transformez un cailloux en or pour acheté du pain"
+    },
+    {
+        "question" : "Votre objectif de fin de vie ?",
+        "answer1" : "Être le plus riche",
+        "answer2" : "Avoir un tableau de chasse bien remplie",
+        "answer3" : "Avoir lu et collectionné la plus grande collection de livre"
+    },
+    {
+        "question" : "De quoi avez-vous peur?",
+        "answer1" : "Des fantômes et autres esprits magique ..",
+        "answer2" : "Des pièges et autres choses cachés",
+        "answer3" : "Des golems, minotaure et autre monstres"
+    },
+    {
+        "question" : "Pour guérir d'une blessure vous préférez ?",
+        "answer1" : "Un bon sort de soin",
+        "answer2" : "Deux petits bandages et c'est reparti",
+        "answer3" : "Une petite fiole de guérison de plaies"
+    },
+    {
+        "question" : "Un archer vous tient en jou à 5 mètres, que faîtes vous ?",
+        "answer1" : "Un sort dans sa face",
+        "answer2" : "Un grand bond en avant et un coup de dague dans la gorge",
+        "answer3" : "Vous avancez lentement avec le bouclier levé"
+    },
+    {
+        "question" : "Quel est le métier que vous réveriez de faire?",
+        "answer1" : "Marchand",
+        "answer2" : "Chasseur",
+        "answer3" : "Alchimiste"
+    },
+    {
+        "question" : "Avez-vous peur de commencer le jeu?",
+        "answer1" : "Oui",
+        "answer2" : "Oui",
+        "answer3" : "Oui"
+    }
+]

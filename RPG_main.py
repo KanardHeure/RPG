@@ -79,7 +79,10 @@ while jouer:
 			Gui_loot(drop)
 			inv_joueur.ajout_item(drop)
 	elif choix == "2":
-		print ("Vous êtes dans le village")
+		print("Vous êtes dans le village")
+		print("C'est ici que vous pouvez changer d'équipemnt")
+		print("Vous êtes équipé de :")
+		joueur.voir_stuff()
 	elif choix == "3":
 		print ("Vous vous endormez")
 		print("Vous regagnez tout vos point de vie")
