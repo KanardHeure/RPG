@@ -2,120 +2,140 @@
 		"nom" : "Epee",
 		"degat" : 10,
 		"valeur" : 2,
-		"ID" : 1
+		"ID" : 1,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Sabre",
 		"degat" : 20,
 		"valeur" : 4,
-		"ID" : 2
+		"ID" : 2,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Baton",
 		"degat" : 5,
 		"valeur" : 20,
-		"ID" : 3
+		"ID" : 3,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Masse",
 		"degat" : 30,
 		"valeur" : 30,
-		"ID" : 4
+		"ID" : 4,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Cimeterre",
 		"degat" : 40,
 		"valeur" : 90,
-		"ID" : 5
+		"ID" : 5,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Marteau",
 		"degat" : 40,
 		"valeur" : 30,
-		"ID" : 6
+		"ID" : 6,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Morgernstern",
 		"degat" : 75,
 		"valeur" : 100,
-		"ID" : 7
+		"ID" : 7,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Matraque",
 		"degat" : 5,
 		"valeur" : 3,
-		"ID" : 8
+		"ID" : 8,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Rapi?e",
 		"degat" : 30,
 		"valeur" : 30,
-		"ID" : 9
+		"ID" : 9,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Hallebarde",
 		"degat" : 60,
 		"valeur" : 80,
-		"ID" : 10
+		"ID" : 10,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Pique",
 		"degat" : 30,
 		"valeur" : 25,
-		"ID" : 11
+		"ID" : 11,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Couteau",
 		"degat" : 7,
 		"valeur" : 8,
-		"ID" : 12
+		"ID" : 12,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Poignard",
 		"degat" : 8,
 		"valeur" : 9,
-		"ID" : 13
+		"ID" : 13,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Hache",
 		"degat" : 20,
 		"valeur" : 30,
-		"ID" : 14
+		"ID" : 14,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Kama",
 		"degat" : 30,
 		"valeur" : 30,
-		"ID" : 15
+		"ID" : 15,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Poing Americain",
 		"degat" : 3,
 		"valeur" : 10,
-		"ID" : 16
+		"ID" : 16,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Poing des cieux",
 		"degat" : 30,
 		"valeur" : 30,
-		"ID" : 17
+		"ID" : 17,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Faux",
 		"degat" : 75,
 		"valeur" : 100,
-		"ID" : 18
+		"ID" : 18,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Espadon",
 		"degat" : 50,
 		"valeur" : 30,
-		"ID" : 19
+		"ID" : 19,
+		"type" : "weapon"
 	},
 	{
 		"nom" : "Katana",
 		"degat" : 100,
 		"valeur" : 150,
-		"ID" : 20
+		"ID" : 20,
+		"type" : "weapon"
 	}
 ]

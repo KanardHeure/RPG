@@ -4,83 +4,95 @@
 		"valeur" : 5,
 		"protection" : 5,
 		"ID" : 1,
-		"Lieu" : "torse"
+		"Lieu" : "torse",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Plastron",
 		"valeur" : 15,
 		"protection" : 20,
 		"ID" : 2,
-		"Lieu" : "torse"
+		"Lieu" : "torse",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Casque",
 		"valeur" : 10,
 		"protection" : 5,
 		"ID" : 1,
-		"Lieu" : "tete"
+		"Lieu" : "tete",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Grand Casque",
 		"valeur" : 100,
 		"protection" : 20,
 		"ID" : 2,
-		"Lieu" : "tete"
+		"Lieu" : "tete",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Pantalon",
 		"valeur" : 10,
 		"protection" : 5,
 		"ID" : 1,
-		"Lieu" : "jambe"
+		"Lieu" : "jambe",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Jambiere",
 		"valeur" : 10,
 		"protection" : 5,
 		"ID" : 2,
-		"Lieu" : "jambe"
+		"Lieu" : "jambe",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Mouffle",
 		"valeur" : 10,
 		"protection" : 5,
 		"ID" : 1,
-		"Lieu" : "main"
+		"Lieu" : "main",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Gantelet",
 		"valeur" : 10,
 		"protection" : 5,
 		"ID" : 2,
-		"Lieu" : "main"
+		"Lieu" : "main",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Epauliere",
 		"valeur" : 10,
 		"protection" : 5,
 		"ID" : 1,
-		"Lieu" : "epaule"
+		"Lieu" : "epaule",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Spalière",
 		"valeur" : 10,
 		"protection" : 5,
 		"ID" : 2,
-		"Lieu" : "epaule"
+		"Lieu" : "epaule",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Chaussure",
 		"valeur" : 10,
 		"protection" : 5,
 		"ID" : 1,
-		"Lieu" : "pied"
+		"Lieu" : "pied",
+		"type" : "armor"
 	},
 	{
 		"nom" : "Botte",
 		"valeur" : 10,
 		"protection" : 5,
 		"ID" : 2,
-		"Lieu" : "pied"
+		"Lieu" : "pied",
+		"type" : "armor"
 	}
 ]

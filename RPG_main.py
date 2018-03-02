@@ -3,53 +3,25 @@ from RPG_function import *
 from RPG_SDL import *
 from RPG_graph import *
 from RPG_histoire import *
-from os import path
-from os import getcwd
-from os import mkdir
+import RPG_init as init
+
 from tkinter import *
 import time
-import pygame
 
 # Chargement des armes, armures, monstres à partir des json
-
-curdir = path.dirname(__file__)
-if len(curdir) == 0: 
-	curdir = getcwd()
-if not path.exists(path.join(curdir,'Save')):
-	mkdir(path.join(curdir,'Save'))
-
-chemin = []
-chemin.append(path.abspath(path.join(curdir,'armes.json')))
-chemin.append(path.abspath(path.join(curdir,'armures.json')))
-chemin.append(path.abspath(path.join(curdir,'mob.json')))
-chemin.append(path.abspath(path.join(curdir,'save.ini')))
-
-manager_armes = ManagerArmes()
-manager_armures = ManagerArmures()
-manager_mob = ManagerMob()
-
-for json_armes in json.load(open(chemin[0])):
-	armes = Arme(**json_armes)
-	manager_armes.load(armes)
-
-for json_armures in json.load(open(chemin[1])):
-	armures = Armure(**json_armures)
-	manager_armures.load(armures)
-
-for json_mob in json.load(open(chemin[2])):
-	mob = Monstre(**json_mob)
-	manager_mob.load(mob)
-
+init.create_save_directory()
+manager_armes, manager_armures, manager_mob, chemin = init.create_manager()
 # Initialisation des caractérisques du joueur
 
 player = Gui_initialize_player(chemin[3])
 
 if player.loadplayer == True:
-	joueur = player.joueur
-	inv_joueur = player.inventaire
+    joueur = player.joueur
+    inv_joueur = player.inventaire
 else:
-	joueur = RPG_function.Joueur(player, manager_armes, manager_armures)
-	inv_joueur = Inventaire()
+    joueur = RPG_function.Joueur(player, manager_armes, manager_armures)
+    inv_joueur = Inventaire()
+
 
 # Lancement du jeu
 
@@ -83,6 +55,10 @@ while jouer:
 		print("C'est ici que vous pouvez changer d'équipemnt")
 		print("Vous êtes équipé de :")
 		joueur.voir_stuff()
+		print("Vous avez dans votre inventaire :")
+		inv_joueur.afficher()
+		print("\n\n")
+		joueur.swap_stuff(inv_joueur)
 	elif choix == "3":
 		print ("Vous vous endormez")
 		print("Vous regagnez tout vos point de vie")

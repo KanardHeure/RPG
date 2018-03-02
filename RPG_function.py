@@ -38,8 +38,30 @@ class Joueur(Entite):
 		self.speed = 10
 		self.force = self.arme.degat
 
+	def swap_stuff(self, inventaire):
+		print("Voulez-vous changer d'arme?\n")
+		answer = input("yes or no ")
+		if answer == "yes":
+			list_arme = []
+			for item in inventaire.inventaire:
+				if item.type == "weapon":
+					list_arme.append(item)
+			if len(list_arme) == 0:
+				print("Vous n'avez pas d'armes dans votre inventaire")
+			else:
+				for indice, arme in enumerate(list_arme):
+					print(indice, arme.nom)
+
+				print("Quel arme souhaitez-vous équiper?")
+				index = int(input())
+				self.changement_arme(list_arme[index])
+		else:
+			print("Pas de changement d'arme")
+
+
 	def changement_arme(self, new_arme):
 		self.arme = new_arme
+
 	def changement_armure(self, new_armure):
 		if new_armure.Lieu == "tete":
 			self.tete = new_armure
