@@ -1,18 +1,11 @@
 # -*- coding:Utf-8 -*-
 from os import path
-from os import getcwd
-from os import mkdir
 import json
 
 import RPG_SDL as manager
 from RPG_function import *
 
-def create_save_directory(): 
-    curdir = path.dirname(__file__)
-    if len(curdir) == 0: 
-        curdir = getcwd()
-    if not path.exists(path.join(curdir,'Save')):
-        mkdir(path.join(curdir,'Save'))
+
 
 def create_manager():
     curdir = path.dirname(__file__)

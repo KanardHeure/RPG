@@ -4,12 +4,13 @@ from RPG_SDL import *
 from RPG_graph import *
 from RPG_histoire import *
 import RPG_init as init
+import RPG_saveload as save
 
 from tkinter import *
 import time
 
 # Chargement des armes, armures, monstres à partir des json
-init.create_save_directory()
+save.create_save_directory()
 manager_armes, manager_armures, manager_mob, chemin = init.create_manager()
 # Initialisation des caractérisques du joueur
 
@@ -68,7 +69,7 @@ while jouer:
 	elif choix == "5":
 		print("Le jeu s'arrête dans 1 secondes")
 		time.sleep (1)
-		player.save(joueur, inv_joueur)
+		save.save(chemin[3], joueur, inv_joueur)
 		inv_joueur.afficher()
 		jouer = False
 	else:

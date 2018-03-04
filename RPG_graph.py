@@ -5,10 +5,10 @@ from os import chdir
 from os import getcwd
 import configparser
 from RPG_function import *
-import sys
 import time
 import RPG_function
-import pickle
+
+import RPG_saveload
 
 
 class Gui_initialize_player():
@@ -61,34 +61,9 @@ class Gui_initialize_player():
 	def _load_perso(self, event):
 		self.fenetre.destroy()
 		self.nom = self.nom.get()
-		wrong_name = False
-		self.cfg_joueur.read(self.chemin)
-		self.liste_joueur = self.cfg_joueur.sections()
+		password = self.password.get()
+		self.joueur, self.inventaire = RPG_saveload.load_ini(self.chemin, self.nom, password)
 		self.loadplayer = True
-		
-		for item in self.liste_joueur:
-			if str(item) == self.nom:
-				test_password = self.cfg_joueur.get(self.nom, "password")
-				password = self.password.get()
-				if password == test_password:
-					print("Login correct")			
-					with open(self.nom + ".rpg",'rb') as fichier:
-						load_joueur = pickle.Unpickler(fichier)
-						self.joueur = load_joueur.load()
-						self.inventaire = load_joueur.load()
-						wrong_name = False
-						break
-				else:
-					print("Mdp incorrect")
-					time.sleep(3)
-					sys.exit(0)
-			else:
-				wrong_name = True
-				print ("test")
-		if wrong_name :
-			print("Nom incorrect")
-			time.sleep(3)
-			sys.exit(0)
 
 	def _init_perso(self, event):
 		self.nom = self.nom.get()
@@ -99,47 +74,8 @@ class Gui_initialize_player():
 			time.sleep(3)
 			sys.exit(0)
 
-		if not path.isfile(self.chemin):
-			print("Pas de compte trouvé sur cet ordinateur")		
-			self.cfg_joueur.read(self.chemin)
-			self.cfg_joueur.add_section(self.nom)
-			self.cfg_joueur.set(self.nom, "password", password)
-			self.cfg_joueur.set(self.nom, "Date_creation", "01/01/2017")
-			self.cfg_joueur.set(self.nom, "Nb_lancement", "1")
-			self.cfg_joueur.set(self.nom, "Last_connextion", "01/01/2017")
-			self.cfg_joueur.write(open(self.chemin,"w"))
-		else:
-			print("Le jeu à déjà était utilisé")
-			self.cfg_joueur.read(self.chemin)
-			self.liste_joueur = self.cfg_joueur.sections()
-			for item in self.liste_joueur:
-				if str(item) == self.nom:
-					print("Nom de joueur déjà existant")
-					time.sleep(3)
-					sys.exit(0)
-			self.cfg_joueur.add_section(self.nom)
-			self.cfg_joueur.set(self.nom, "password", password)
-			self.cfg_joueur.set(self.nom, "Date_creation", "01/01/2017")
-			self.cfg_joueur.set(self.nom, "Nb_lancement", "1")
-			self.cfg_joueur.set(self.nom, "Last_connextion", "01/01/2017")
-
-
-		self.cfg_joueur.write(open(self.chemin,"w"))
-		self.fenetre.destroy()	
-				
-	def save(self, joueur, inventaire):
-
-		self.cfg_joueur.set(self.nom, "Date_creation", "01/01/2017")
-		self.cfg_joueur.set(self.nom, "Nb_lancement", "2")
-		self.cfg_joueur.set(self.nom, "Last_connextion", "01/01/2017")
-		self.cfg_joueur.write(open(self.chemin,"w"))
-
-
-		with open(self.nom + ".rpg",'wb') as fichier:
-			save_joueur = pickle.Pickler(fichier)
-			save_joueur.dump(joueur)
-			save_joueur.dump(inventaire)
-			print("Sauvegarde effectué")
+		RPG_saveload.create_ini(self.chemin, self.nom, password)
+		self.fenetre.destroy()
 
 
 class Gui_loot():
