@@ -32,7 +32,7 @@ def Combat(joueur, monstre):
 
 def Attaque(attaquant, defenseur):
     defenseur.pv = int(defenseur.pv) - int(attaquant.force) 
-    print ("{0} attaque {1} et lui inflige {2} dégats.".format(attaquant.nom, defenseur.nom, attaquant.force))
+    print ("{0} attaque {1} et lui inflige {2} dégats.".format(attaquant.nom, defenseur.nom, int(attaquant.force)))
     if defenseur.pv > 0:
         print ("Il reste {0} hp à {1}.".format(defenseur.pv, defenseur.nom))
     else:

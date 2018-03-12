@@ -2,9 +2,6 @@
 
 # Liste des import :
 import random
-import RPG_SDL
-
-
 
 class Entite():
     "Création d'une entite"

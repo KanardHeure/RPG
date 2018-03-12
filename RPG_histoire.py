@@ -1,6 +1,5 @@
 # -*- coding:Utf-8 -*-
 from RPG_function import *
-from RPG_SDL import *
 from RPG_graph import *
 from RPG_combat import *
 
