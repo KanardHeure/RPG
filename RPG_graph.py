@@ -1,4 +1,9 @@
 # -*- coding:Utf-8 -*-
+
+####----####----####----####----####
+###############IMPORT###############
+####----####----####----####----####
+
 from tkinter import *
 from os import path
 from os import chdir
@@ -11,6 +16,9 @@ import RPG_histoire as story
 from RPG_function import *
 import RPG_saveload
 
+####----####----####----####----####
+########### -- Classe -- ###########
+####----####----####----####----####
 
 class Gui_initialize_player():
     def __init__(self, chemin, manager_armes, manager_armures):
@@ -192,4 +200,3 @@ class Gui_main():
         self.button_regarder.destroy()
         self.button_sac.destroy()
         self.button_quitter.destroy()
-
