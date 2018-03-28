@@ -1,19 +1,18 @@
 # -*- coding:Utf-8 -*-
 
-# Liste des import :
+####----####----####----####----####
+###############IMPORT###############
+####----####----####----####----####
+
 import random
 
-class Entite():
-    "Création d'une entite"
-    def __init__(self, nom, pv = 200, mana = 50):
-        self.pv = pv
-        self.nom = nom
-        self.mana = mana
+####----####----####----####----####
+##############Function##############
+####----####----####----####----####
 
-class Joueur(Entite):
+class Joueur():
     "Création d'un joueur"
     def __init__(self, nom, man_arme, man_armure, pv = 200, mana = 50):
-        super().__init__(nom, pv, mana)
 
         #__INFO__
         self.nom = nom
@@ -86,7 +85,7 @@ class Joueur(Entite):
         print("Votre arme: ")
         print(self.arme.nom)
 
-class Monstre(Entite):
+class Monstre():
     "Création d'un monstre"
     def __init__(self, **attribut):
         for attr_name, attr_value in attribut.items():
@@ -186,6 +185,3 @@ def lancerSortilege(sort,lanceur,defenseur):
     defenseur.pv = defenseur.pv - sort.degat
     print("")
     print("")
-
-
-

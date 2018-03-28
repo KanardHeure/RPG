@@ -94,6 +94,27 @@ class ManagerLoot():
         else:
             print("ERROR")
 
+def init_manager():
+    "Initialise tout les objets/listes via les json"
+    chemin = init_chemin()
+    manager_armes = ManagerArmes()
+    manager_armures = ManagerArmures()
+    manager_mobs = ManagerMobs()
+
+    for json_armes in json.load(open(chemin[0])):
+        armes = func.Arme(**json_armes)
+        manager_armes.load(armes)
+
+    for json_armures in json.load(open(chemin[1])):
+        armures = func.Armure(**json_armures)
+        manager_armures.load(armures)
+
+    for json_mob in json.load(open(chemin[2])):
+        mob = func.Monstre(**json_mob)
+        manager_mobs.load(mob)
+
+    return manager_armes, manager_armures, manager_mobs, chemin
+
 def create_save_directory():
     "Créer un répertoire 'save' à la racine du script"
     curdir = path.dirname(__file__)
@@ -185,24 +206,3 @@ def init_chemin():
     chemin.append(path.abspath(path.join(curdir,'mob.json')))
     chemin.append(path.abspath(path.join(curdir,'save.ini')))
     return chemin
-
-def init_manager():
-    "Initialise tout les objets/listes via les json"
-    chemin = init_chemin()
-    manager_armes = ManagerArmes()
-    manager_armures = ManagerArmures()
-    manager_mobs = ManagerMobs()
-
-    for json_armes in json.load(open(chemin[0])):
-        armes = func.Arme(**json_armes)
-        manager_armes.load(armes)
-
-    for json_armures in json.load(open(chemin[1])):
-        armures = func.Armure(**json_armures)
-        manager_armures.load(armures)
-
-    for json_mob in json.load(open(chemin[2])):
-        mob = func.Monstre(**json_mob)
-        manager_mobs.load(mob)
-
-    return manager_armes, manager_armures, manager_mobs, chemin
